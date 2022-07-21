@@ -1,0 +1,48 @@
+{
+  "app": "npx ts-node --prefer-ts-exts bin/stack.ts",
+  "watch": {
+    "include": [
+      "**"
+    ],
+    "exclude": [
+      "README.md",
+      "cdk*.json",
+      "**/*.d.ts",
+      "**/*.js",
+      "tsconfig.json",
+      "package*.json",
+      "yarn.lock",
+      "node_modules",
+      "test"
+    ]
+  },
+  "context": {
+    "aws-cdk:enableDiffNoFail": true,
+    "@aws-cdk/core:stackRelativeExports": true,
+    "@aws-cdk/aws-ecr-assets:dockerIgnoreSupport": true,
+    "@aws-cdk/aws-secretsmanager:parseOwnedSecretName": true,
+    "@aws-cdk/aws-kms:defaultKeyPolicies": true,
+    "@aws-cdk/aws-s3:grantWriteWithoutAcl": true,
+    "@aws-cdk/aws-cloudfront:defaultSecurityPolicyTLSv1.2_2021": true,
+    "@aws-cdk/aws-s3:grantWriteWithoutAcl": true,
+    "@aws-cdk/core:target-partitions": [
+      "aws",
+      "aws-cn"
+    ],
+    "ENVIRONMENTS": {
+      "qa": {
+        "AccountId":"",
+        "Region":"us-east-1",
+        "EnvironmentStage": "qa",
+        "Prefix":"example-saml-idp",
+        "ApplicationVersion": "1.0.0",
+        "IdentityProviderName": "<Identity_provider_name>",
+        "IdentityProviderType": "SAML",
+        "IdentityProviderSuperadminGroupName": "superadmin",
+        "IdentityProviderSAMLGroupKey": "groupMembership",
+        "CognitoMappedSuperadminGroupKey": "groups",
+        "SamlMetadataFile": "./SAML/metadata.xml"
+      }
+    }
+  }
+}
