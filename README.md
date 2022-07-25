@@ -1,4 +1,4 @@
-# Custom React app with SSO using Cognito SAML Idp
+# Custom React app with auth using Cognito SAML with Idp
 
 ## Introduction
 
