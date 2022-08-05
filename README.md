@@ -22,6 +22,10 @@ If you decide to utilize the ability to restrict access to UI components you wil
 
 If you want to opt of using the custom attributes configuration you will have to remove the `attributeMapping`, `customAttributes`, `clientWriteAttributes` and `clientReadAttributes` from the CDK stack. Please note, once you create a custom attribute on the userpool it cannot be removed. To remove this you would have to delete the userpool and redeploy.
 
+
+### Architechture
+<img width="662" alt="Screen Shot 2022-08-05 at 2 26 12 PM" src="https://user-images.githubusercontent.com/7748458/183206015-f54ab27a-28f9-41b3-bb74-1de2c0facf6f.png">
+
 ### UI
 
 The UI is deployed to an S3 bucket and the content is served via a Cloudfront distribution.
