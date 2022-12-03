@@ -2,16 +2,16 @@
 
 ## Introduction
 
-This project is a simple template for getting started with a react app that has SAML SSO configured. This template also features the ability to restrict access to UI components based on the user's groups that are preconfigured in the Identity provider's console. The template includes:
+This project is a simple template for getting started with a React app that has SAML SSO configured. This template also features the ability to restrict access to UI components based on the user's groups that are preconfigured in the Identity provider's console. The template includes:
 
-- Basic React UI and react routing
+- Basic React UI and React routing
 - Ability to restrict access to components based on groups configured in Idp console.
 - CDK for deploying UI to S3 and Cloudfront distribution
 - CDK for configuring Cognito userpool, identity pool, SAML identity provider setup, custom attribute setup from Idp
 
 ## How it works
 
-This is a react app that uses the Amplify UI library for Authentication. One can authenticate via SSO or username and password. However, this solution is setup to use SSO. Once you deploy the CDK stack and have the corresponding application integration in the identity providers console. You will be able to login by visiting the cloudfront distribution URL and clicking the SSO button on the page that appears. This setup is not entirely automated as you will have to do some configuration in your identity provider console.
+This is a React app that uses the Amplify UI library for Authentication. One can authenticate via SSO or username and password. However, this solution is setup to use SSO. Once you deploy the CDK stack and have the corresponding application integration in the identity providers console. You will be able to login by visiting the cloudfront distribution URL and clicking the SSO button on the page that appears. This setup is not entirely automated as you will have to do some configuration in your identity provider console.
 
 ### Authentication
 
