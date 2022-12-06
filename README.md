@@ -15,7 +15,7 @@ This is a React app that uses the Amplify UI library for Authentication. One can
 
 ### Authentication
 
-If you decide to utilize the ability to restrict access to UI components you will need to ensure that you setup setup an additional attribute to send group membership information as a SAML attribute in the SAML response from the identity provider. The CDK is setup to configure a Cognito custom attribute to which IdP's SAML attribute will be mapped. The setting for the Cognito custom attribute can be found in the `cdk.json` and is called `CognitoMappedSuperadminGroupKey`. Change this value to change the name of the custom attribute. The CDK will also configure the attribute mapping for this.
+If you decide to utilize the ability to restrict access to UI components you will need to ensure that you setup an additional attribute to send group membership information as a SAML attribute in the SAML response from the identity provider. The CDK is setup to configure a Cognito custom attribute to which IdP's SAML attribute will be mapped. The setting for the Cognito custom attribute can be found in the `cdk.json` and is called `CognitoMappedSuperadminGroupKey`. Change this value to change the name of the custom attribute. The CDK will also configure the attribute mapping for this.
 
 
 **Opt out of Idp attributes**
