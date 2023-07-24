@@ -25,7 +25,7 @@ npm run build
 # cdk synth
 
 # Bootstraping
-echo "===> Bootstraping account
+echo "===> Bootstraping account"
 cdk bootstrap
 
 # # Deploy
